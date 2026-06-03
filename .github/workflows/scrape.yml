@@ -1,0 +1,61 @@
+name: Daily Job Scraper
+
+on:
+  # Run every day at 6:00 AM IST (00:30 UTC)
+  schedule:
+    - cron: "30 0 * * *"
+
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── 1. Checkout repo ──────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Setup Node.js ──────────────────────────────────────────────────
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: scraper/package.json
+
+      # ── 3. Install dependencies ───────────────────────────────────────────
+      - name: Install scraper dependencies
+        working-directory: scraper
+        run: npm install
+
+      # ── 4. Install Playwright browsers ───────────────────────────────────
+      - name: Install Playwright Chromium
+        working-directory: scraper
+        run: npx playwright install chromium --with-deps
+
+      # ── 5. Run the scraper ────────────────────────────────────────────────
+      - name: Run job scraper
+        working-directory: scraper
+        run: npx ts-node index.ts
+        env:
+          NODE_ENV: production
+
+      # ── 6. Commit updated data.json if changed ────────────────────────────
+      - name: Commit and push data.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "AP Needs You Bot"
+          git add data.json
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to data.json, skipping commit."
+          else
+            git commit -m "🤖 Auto-update: Job listings refresh $(date +'%Y-%m-%d %H:%M IST')"
+            git push
+          fi

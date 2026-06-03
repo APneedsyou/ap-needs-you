@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AP Needs You | Job Tracker 2026</title>
-  <meta name="description" content="Live job tracker for Andhra Pradesh — government and private IT openings, updated daily." />
+  <meta name="description"
+    content="Live job tracker for Andhra Pradesh — government and private IT openings, updated daily." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
   <style>
-    body { font-family: 'Space Grotesk', sans-serif; }
-    .scrollbar-hide::-webkit-scrollbar { display: none; }
-    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
 
     @keyframes pulse-dot {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
     }
+
     .live-dot {
       animation: pulse-dot 1.8s ease-in-out infinite;
     }
   </style>
 </head>
+
 <body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col">
 
   <!-- ── Header ─────────────────────────────────────────────────────────── -->
@@ -29,7 +50,9 @@
     <div class="max-w-5xl mx-auto flex justify-between items-center">
 
       <div class="flex items-center gap-3">
-        <span class="text-xl font-black tracking-wider text-teal-400">AP NEEDS YOU</span>
+        <a href="./"
+          class="text-xl font-black tracking-wider text-teal-400 hover:text-teal-300 transition-colors duration-200">AP
+          NEEDS YOU</a>
       </div>
 
       <div class="flex items-center gap-2">
@@ -38,7 +61,8 @@
           <span class="live-dot w-2 h-2 rounded-full bg-teal-400 inline-block"></span>
           LIVE
         </span>
-        <span class="bg-teal-500/10 text-teal-400 border border-teal-500/20 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
+        <span
+          class="bg-teal-500/10 text-teal-400 border border-teal-500/20 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
           2026 Hub
         </span>
       </div>
@@ -55,7 +79,8 @@
       </h1>
       <p class="text-base text-slate-400 leading-relaxed">
         We track government PDFs, APPSC notifications, and private IT openings —
-        filtered into instant, clickable updates for <span class="text-teal-400 font-semibold">Andhra Pradesh</span> job seekers.
+        filtered into instant, clickable updates for <span class="text-teal-400 font-semibold">Andhra Pradesh</span> job
+        seekers.
       </p>
     </div>
 
@@ -101,4 +126,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>

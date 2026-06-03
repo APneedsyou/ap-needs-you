@@ -1,55 +1,46 @@
 [
   {
-    "id": "IT1",
-    "department": "Private IT Jobs Aggregator",
-    "vacancies": "Multiple Openings Verified",
-    "date": "Tracked from LinkedIn, Naukri, & Foundit",
-    "status": "Active",
-    "subJobs": [
-      {
-        "title": "Miracle Software Systems - Mega Walk-In (Vizag)",
-        "link": "https://www.miraclesoft.com/careers/"
-      },
-      {
-        "title": "TCS - System Engineer Trainee via LinkedIn Hub",
-        "link": "https://www.linkedin.com"
-      },
-      {
-        "title": "Tech Mahindra - Associate Software Engineer via Naukri",
-        "link": "https://www.naukri.com"
-      }
-    ]
-  },
-  {
-    "id": "N1",
-    "department": "Higher Education Department",
-    "vacancies": "1,500 Posts",
-    "date": "May 2026 (Live Now)",
-    "status": "Active",
-    "link": "https://portal-psc.ap.gov.in"
-  },
-  {
-    "id": "N2",
-    "department": "APPSC Group 1 & Home Dept (Police)",
+    "id": "APPSC-GRP1",
+    "department": "APPSC Group 1 Services (Home Dept / Police)",
     "vacancies": "2,778 Posts",
     "date": "August 15, 2026",
     "status": "Upcoming",
-    "link": "https://psc.ap.gov.in"
+    "category": "government",
+    "link": "https://psc.ap.gov.in",
+    "lastUpdated": "3 June 2026",
+    "source": "APPSC Official Portal"
   },
   {
-    "id": "N3",
+    "id": "APPSC-GRP2",
     "department": "APPSC Group 2 & Engineering Services",
     "vacancies": "1,253 Posts",
     "date": "September 15, 2026",
     "status": "Upcoming",
-    "link": "https://psc.ap.gov.in"
+    "category": "government",
+    "link": "https://psc.ap.gov.in",
+    "lastUpdated": "3 June 2026",
+    "source": "APPSC Official Portal"
   },
   {
-    "id": "N4",
-    "department": "School Education (Mega DSC)",
+    "id": "DSC-2026",
+    "department": "School Education – Mega DSC Teacher Recruitment",
     "vacancies": "3,004 Posts",
     "date": "October 15, 2026",
     "status": "Upcoming",
-    "link": "https://naipunyam.ap.gov.in"
+    "category": "government",
+    "link": "https://naipunyam.ap.gov.in",
+    "lastUpdated": "3 June 2026",
+    "source": "AP School Education Portal"
+  },
+  {
+    "id": "APHEDCET",
+    "department": "Higher Education Department",
+    "vacancies": "1,500 Posts",
+    "date": "May 2026 (Active)",
+    "status": "Active",
+    "category": "government",
+    "link": "https://portal-psc.ap.gov.in",
+    "lastUpdated": "3 June 2026",
+    "source": "AP Higher Education Portal"
   }
 ]

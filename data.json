@@ -1,11 +1,24 @@
 [
   {
     "id": "IT1",
-    "department": "Miracle Software Systems",
-    "vacancies": "Mega Walk-In Drive (Vizag)",
-    "date": "Every Friday (Freshers)",
+    "department": "Private IT Jobs Aggregator",
+    "vacancies": "Multiple Openings Verified",
+    "date": "Tracked from LinkedIn, Naukri, & Foundit",
     "status": "Active",
-    "link": "https://www.miraclesoft.com/careers/"
+    "subJobs": [
+      {
+        "title": "Miracle Software Systems - Mega Walk-In (Vizag)",
+        "link": "https://www.miraclesoft.com/careers/"
+      },
+      {
+        "title": "TCS - System Engineer Trainee via LinkedIn Hub",
+        "link": "https://www.linkedin.com"
+      },
+      {
+        "title": "Tech Mahindra - Associate Software Engineer via Naukri",
+        "link": "https://www.naukri.com"
+      }
+    ]
   },
   {
     "id": "N1",

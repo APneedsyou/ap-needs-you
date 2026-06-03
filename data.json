@@ -1,5 +1,13 @@
 [
   {
+    "id": "IT1",
+    "department": "Miracle Software Systems",
+    "vacancies": "Mega Walk-In Drive (Vizag)",
+    "date": "Every Friday (Freshers)",
+    "status": "Active",
+    "link": "https://www.miraclesoft.com/careers/"
+  },
+  {
     "id": "N1",
     "department": "Higher Education Department",
     "vacancies": "1,500 Posts",
